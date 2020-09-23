@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 0.925rem;
+  letter-spacing: 0.01rem;
+  font-weight: 200;
+  line-height: 1.5rem;
+}
+
+#grad1{
+  background-image: linear-gradient(180deg, white 1%, #f6f6f6 2.5%);
+}
+
+body {
+  margin: auto;
+  padding: 0 2rem 2rem 1rem;
+  /*position: relative;*/
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.wikilogo {
+  /*display: fixed;*/
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+
+/* == SIDEBAR STYLE  == */
+
+.sideline {
+  
+  margin-top: 1.5rem;
+  
+}
+.sidelinks {
+  list-style: none;
+  margin-left: -2rem;
+  font-family: monospace;
+}
+
+h6::after {
+  content: "";
+  display: block;
+  height: 0.01rem;
+  margin-bottom: 1.2rem;
+  margin-top: -0.2rem;
+  width: 20vw;
+  background-color: darkgray;
+}
+
+.sidelinks a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  line-height: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+h6 {
+  margin-bottom: -0.5rem;
+  margin-top: 1rem;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: darkslategrey
+}
+
+
