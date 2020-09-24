@@ -7,14 +7,12 @@
   line-height: 1.5rem;
 }
 
-#grad1{
-  background-image: linear-gradient(180deg, white 1%, #f6f6f6 2.5%);
-}
-
 body {
+  background-image: linear-gradient(180deg, white 1%, #f6f6f6 6%);
+  background: cover;
   margin: auto;
   padding: 0 2rem 2rem 1rem;
-  /*position: relative;*/
+  position: relative;
 }
 
 a:hover{
@@ -23,30 +21,42 @@ a:hover{
 
 .wikilogo {
   /*display: fixed;*/
-  display: inline-block;
-  margin-top: 0.1rem;
+  /*display: inline-block;*/
+
+  margin-bottom: 1.1rem;
+  
 }
 
 /* == SIDEBAR STYLE  == */
 
 .sideline {
-  
-  margin-top: 1.5rem;
+
+  width: 161.5px;
+  height: 100vh;
+  margin-top: 0.35rem;
+  margin-left: 0.4rem;
+  border-right: 1px solid lightblue;
   
 }
+
+.sideline img {
+  margin-bottom: 0.9rem;
+}
+
 .sidelinks {
   list-style: none;
-  margin-left: -2rem;
-  font-family: monospace;
+  font-family: serif;
+  margin-left: -2.25rem;
+  margin-top: 0.5rem;
 }
 
 h6::after {
   content: "";
   display: block;
   height: 0.01rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
   margin-top: -0.2rem;
-  width: 20vw;
+  width: 100px;
   background-color: darkgray;
 }
 
@@ -54,17 +64,138 @@ h6::after {
   display: block;
   text-decoration: none;
   font-size: 0.8rem;
-  letter-spacing: normal;
   line-height: 0.85rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
+  letter-spacing: -0.01;
 }
 
 h6 {
-  margin-bottom: -0.5rem;
-  margin-top: 1rem;
+  margin-bottom: -0.45rem;
+  margin-top: 1.25rem;
+  margin-left: 0.5rem;
   font-family: sans-serif;
   font-size: 0.8rem;
   color: darkslategrey
+}
+
+.fa-cog {
+  
+  margin-left: 60px;
+  font-size: 1rem;
+  
+}
+
+.fa-pencil {
+  
+  position: relative;
+  left: 60px;
+  color: darkslategray;
+  letter-spacing: -0.01rem;
+  top: -0.7rem;
+  
+}
+.coverimage {
+  float: right;
+  position: relative;
+  
+}
+.coverimage::after {
+  content: "";
+  clear: both;
+  display: table;
+  position: relative;
+}
+
+.header {
+  
+  height: 80px;
+  margin-bottom: -10px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 0.4rem;
+
+}
+
+.main {
+  position:absolute;
+  left: 175px;
+  top: 0;
+}
+
+.footer{
+  
+  border: 1px solid;
+}
+
+
+.maincontent {
+  background-color: white;
+}
+
+.header a{
+  text-decoration: none;
+}
+
+.headerfirstline {
+  text-align: right;
+  padding: 0.3rem;  
+  margin-right: 0.5rem;
+}
+
+.headerfirstline a {
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  margin: 0 1.5px;
+  letter-spacing: -0.01rem;
+  line-height: 5px;
+}
+
+.headersecondline {
+  text-align: right;
+  padding: 0.3rem;  
+  margin-right: 0.5rem;
+}
+.headersecondline a {
+  font-family: sans-serif;
+  font-size: 0.85rem;
+  margin: auto -2px;
+  letter-spacing: -0.01rem;
+  padding: 15px 8px;
+  line-height: 5px;
+  text-align: center;
+  border-left: 0.5px solid skyblue;
+  display: inline-block;
+  background-image: linear-gradient(180deg, #f6f6f6 20%, #e6f2ff 80%);
+
+}
+button{
+  border-left: none;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey; 
+  padding: 3px 2px;
+  margin-left: -4px;
+  background-color: white;
+}
+input {
+  width: 20rem;
+  border-right: none;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;  
+  font-size: 0.9rem;
+  padding: 0.2rem;
+}
+
+.topleftbutton {
+  float: left;
+}
+
+.topleftbutton::after{
+  content: " ";
+  clear: both;
+  display: table;  
 }
 
 
