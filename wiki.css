@@ -108,18 +108,17 @@ h6 {
 
 .header {
   
-  height: 80px;
-  margin-bottom: -10px;
-  position: relative;
+  position: absoute;
   top: 0;
   width: 100%;
-  padding: 0.4rem;
+  padding: 0.4rem 0 0 0;
+  border-bottom: 1px solid lightblue;
 
 }
 
 .main {
-  position:absolute;
-  left: 175px;
+  position: absolute;
+  left: 184px;
   top: 0;
 }
 
@@ -131,6 +130,8 @@ h6 {
 
 .maincontent {
   background-color: white;
+  position: relative;
+  top: -10px;
 }
 
 .header a{
@@ -153,7 +154,7 @@ h6 {
 
 .headersecondline {
   text-align: right;
-  padding: 0.3rem;  
+  padding: 0.3rem 0.5rem 0 0.5rem;  
   margin-right: 0.5rem;
 }
 .headersecondline a {
@@ -164,11 +165,12 @@ h6 {
   padding: 15px 8px;
   line-height: 5px;
   text-align: center;
-  border-left: 0.5px solid skyblue;
+  border-right: 0.5px solid skyblue;
   display: inline-block;
-  background-image: linear-gradient(180deg, #f6f6f6 20%, #e6f2ff 80%);
+  background-image: linear-gradient(180deg, rgba(167,215,249,0) 25%, #a7d7f9 150%);
 
 }
+
 button{
   border-left: none;
   border-top: 1px solid grey;
@@ -198,4 +200,14 @@ input {
   display: table;  
 }
 
+.defaulttab {
+  
+  background-color: white;
+  
+}
 
+.topleftbutton-defaulttab {
+  
+  background-image: linear-gradient(180deg, white 100%, white 100%);
+  
+}
