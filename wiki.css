@@ -1,13 +1,44 @@
 * {
   box-sizing: border-box;
   font-family: sans-serif;
-  font-size: 0.925rem;
-  line-height: 1.1rem;
+}
+
+.paragraphs, .mainpara, .paragraphssub p {
+  font-size: 0.92rem;
+  line-height: 1.3rem;
+  letter-spacing: -0.01rem;
+}
+.paragraphs p::before{
+  content: "";
+  display: block;
+  height: 0.01rem;
+  margin-bottom: 0.5rem;
+  margin-top: -1rem;
+  width: 100%;
+  background-color: darkgray;
+}
+.paragraphs{
+margin-bottom: -1rem
+}
+
+h2 {
+  
+  font-size: 1.15rem;
+  margin-right: 1rem;
+}
+
+a {
+  color: mediumslateblue;
+}
+
+sup {
+  font-size: 0.6rem;
 }
 
 body {
-  background-image: linear-gradient(180deg, white 8%, #f6f6f6 13%);
-  background: cover;
+  background-image: linear-gradient(180deg, white 3%, #f6f6f6 6%);
+  background-size: auto;
+  background-repeat: no-repeat;
   margin: auto;
   padding: 0 2rem 2rem 1rem;
   position: relative;
@@ -27,8 +58,8 @@ a:hover{
 
 .sideline {
 
-  width: 161.5px;
-  height: 100vh;
+  width: 162px;
+  height: 160vh;
   margin-top: 0.35rem;
   margin-left: 0.4rem;
   border-right: 1px solid lightblue;
@@ -42,16 +73,15 @@ a:hover{
 .sidelinks {
   list-style: none;
   font-family: serif;
-  margin-left: -2.25rem;
-  margin-top: 0.5rem;
+  margin-left: -2rem;
 }
 
 h6::after {
   content: "";
   display: block;
   height: 0.01rem;
-  margin-bottom: 1.1rem;
-  margin-top: -0.2rem;
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
   width: 100px;
   background-color: darkgray;
 }
@@ -61,7 +91,7 @@ h6::after {
   text-decoration: none;
   font-size: 0.8rem;
   line-height: 0.85rem;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.4rem;
   letter-spacing: -0.01;
 }
 
@@ -94,9 +124,10 @@ h6 {
 .coverimage {
   float: right;
   position: relative;
+  top: -1rem;
   border: 1px solid black;
   text-align: center;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   margin: 1rem;
   background-color: #f6f6f6;
 }
@@ -107,12 +138,32 @@ h6 {
   position: relative;
 }
 
+.coverimage p {
+  font-size: 0.925rem;
+  padding: 0.4rem;
+  margin: 1px;
+}
+
+.coverimage td p {
+  font-size: 0.8rem;
+  text-align: left;
+  padding: 0;
+  margin: 1px;
+}
+
+.coverimage td a{
+  font-size: 0.8rem;
+}
+.coverimage td {
+  padding: 0.2rem 0.1rem;
+}
+
 .header {
   
   position: absoute;
   top: 0;
   width: 100%;
-  padding: 0.4rem 0 0 0;
+  padding: 1.1rem 0 0 0;
   border-bottom: 1px solid lightblue;
 
 }
@@ -125,7 +176,28 @@ h6 {
 
 .footer{
   
-  border: 1px solid;
+  border-top: 1px solid skyblue;
+  font-size: 0.8rem;
+  padding: 2rem;
+  
+}
+.footer a{
+  text-decoration: none;
+}
+
+.footerlinks{
+  padding: 0 0.5rem;
+}
+
+.footer img{
+  float: right;
+  padding: 3px;
+}
+
+.footer img::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .maincontent {
@@ -146,7 +218,7 @@ h6 {
 
 .headerfirstline a {
   font-family: sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   margin: 0 1.5px;
   letter-spacing: -0.01rem;
   line-height: 5px;
@@ -161,11 +233,11 @@ h6 {
 
 .headersecondline a {
   font-family: sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   margin: auto -2px;
   letter-spacing: -0.01rem;
-  padding: 15px 10px;
-  line-height: 5px;
+  padding: 10px 10px;
+  line-height: 0.5rem;
   text-align: center;
   border-right: 0.5px solid skyblue;
   display: inline-block;
@@ -211,11 +283,10 @@ a:active{
 
 h1 {
   font-style: italic;
-  font-size: 2.15rem;
+  font-size: 2rem;
   letter-spacing: -0.01rem;
-  font-weight: 500;
-  line-height: 2rem;
   font-family: times;
+  line-height: 2rem;
   padding: 10px;
   margin: 0 auto auto -0.5rem;
 }
@@ -231,24 +302,82 @@ h1::after {
 
 h3 {
   font-size: 0.8rem;
-  margin: -11px 0 0.5rem 0;
+  margin: -11px 0 1.5rem 0;
+  font-weight: 400;
   padding: 0;
+  color: darkslategrey;
 }
 
 .maincontent a {
   
   text-decoration: none;
 }
+
 table {
   text-align: left;
 }
 
-table a {
-  font-size: 0.8rem;
-}
-
-.Contents {
+.contents {
   border: 1px solid black;
   display: inline-block;
   background-color: #f6f6f6;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
 }
+.contenttitle p{
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0 0 0 2rem;
+  display: inline;
+}
+.contents li {
+  margin-left: -1rem;
+  padding: 0 0.5rem;
+}
+.gamepic {
+  border: 1px solid skyblue;
+  background-color: #f6f6f6;
+  display: inline-block;
+  float: left;
+  width: 200px;
+  text-align: center;
+  padding:2px;
+  margin: 0.5rem;
+}
+.gamepic img::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#gamepicsub{
+  font-size: 0.75rem;
+  padding: 0 0.8rem;
+  text-align: left;
+  margin-top: -0.2rem;
+}
+
+.editlinks {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.paragraphs-references, .paragraphs-furtherreadings {
+  font-size: 0.8rem;
+}
+.firstline a{
+  font-style: italic;
+}
+
+.links{
+  list-style: none;
+  border: 1px solid skyblue;
+  padding: 0.5rem;
+  background-color: #f6f6f6;
+}
+.links li {
+  display: inline;
+  padding: 0.1rem;
+}
+
+
